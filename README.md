@@ -79,13 +79,13 @@ Server: WEBrick/1.3.1 (Ruby/1.9.3/2012-02-16)
 Date: Tue, 08 May 2012 20:08:28 GMT
 Connection: Keep-Alive
 
-{"job":{"status":"in_progress","href":"/jobs"}}
+{"job":{"status":"in_progress","links":[{"href":"self","rel":"/jobs/1"},{"href":"/jobs","rel":"index"}]}}
 ```
 
 After ten seconds, you should see the status switch:
 
 ```
-$ curl -i -H "Accept: application/json" http://localhost:3000/jobs/2
+$ curl -i -H "Accept: application/json" http://localhost:3000/jobs/1
 HTTP/1.1 200 OK 
 Content-Type: application/json; charset=utf-8
 Link: <http://localhost:3000/profile>; rel="profile"
@@ -98,5 +98,5 @@ Server: WEBrick/1.3.1 (Ruby/1.9.3/2012-02-16)
 Date: Tue, 08 May 2012 20:09:10 GMT
 Connection: Keep-Alive
 
-{"job":{"status":"finished","href":"/jobs"}}```
+{"job":{"status":"finished","links":[{"href":"self","rel":"/jobs/1"},{"href":"/jobs","rel":"index"}]}}
 ```
