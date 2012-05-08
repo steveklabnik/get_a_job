@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/steveklabnik/active_model_serializers.git
+  revision: b7e23332532c36fdd2801b28ccd65adf78f1e8b1
+  specs:
+    active_model_serializers (0.1.0)
+      activemodel (= 4.0.0.beta)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -87,6 +94,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers!
   jquery-rails
   rails (= 4.0.0.beta)
   rails-api
