@@ -98,5 +98,5 @@ Server: WEBrick/1.3.1 (Ruby/1.9.3/2012-02-16)
 Date: Tue, 08 May 2012 20:09:10 GMT
 Connection: Keep-Alive
 
-{"job":{"status":"finished","href":"/jobs"}}```
+{"job":{"status":"finished","href":"/jobs"}}
 ```
