@@ -1,0 +1,19 @@
+<h1>Job Queue Profile</h1>
+<p>This is the profile for the job queue.</p>
+
+<h2>Link relations</h2>
+<p>These are in addition to those in the <a href="http://www.iana.org/assignments/link-relations/link-relations.xml">IANA link registry</a>.</p>
+
+<ul>
+  <li><code>template</code>: Following a link with this relation will give you a template object used to create a new job.</li>
+</ul>
+
+<h2>The <code>job</code> Object</h2>
+
+<p>Some notes on the <code>job</code> object:</p>
+
+<h3>Creation</h3>
+<p>To create a <code>job</code>, send a filled-in template via a POST request to a link with the <code>index</code> relation.</p>
+
+<h3>Links</h3>
+<p>The <code>links</code> attribute isn't part of the data representation of the <code>job</code> object, it simply contains a list of links. This will be a JSON array with objects with two keys: <code>rel</code> and <code>href</code>.</p>
