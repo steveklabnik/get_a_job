@@ -2,7 +2,7 @@ class JobsController < ApplicationController
   before_filter :set_profile
 
   def new
-    render :json => JobSerializer.new(Job.new, :scope => true)
+    render :json => Job.new
   end
 
   def create
@@ -25,9 +25,7 @@ class JobsController < ApplicationController
   end
 
   def show
-    @job = Job.find(params[:id])
-
-    render :json => JobSerializer.new(@job, :scope => true)
+    render :json => Job.find(params[:id])
   end
 
   private
