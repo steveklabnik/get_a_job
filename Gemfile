@@ -44,3 +44,5 @@ gem "ember-rails"
 
 gem "active_model_serializers", :git => "git://github.com/josevalim/active_model_serializers.git"
 
+#gem 'rails-api' # for now :(
+

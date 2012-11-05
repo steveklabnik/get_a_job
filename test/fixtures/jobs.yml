@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  number_one: 1
+  number_two: 1
+  answer: 1
+  status: MyString
+
+two:
+  number_one: 1
+  number_two: 1
+  answer: 1
+  status: MyString
